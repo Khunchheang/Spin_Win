@@ -65,7 +65,7 @@ public class AnswerDialogFragment extends DialogFragment {
         }
 
         else if (answer==String.valueOf(0)){
-            textView.setBackgroundColor(Color.GREEN);
+            textView.setBackgroundColor(Color.parseColor("#2d7b31"));
         }
 
         else textView.setBackgroundColor(Color.RED);

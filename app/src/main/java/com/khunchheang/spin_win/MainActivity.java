@@ -82,10 +82,18 @@ public class MainActivity extends Activity {
         btn_Start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                btn_Start.setBackgroundColor(Color.parseColor("#2d7b31"));
                 showAnswer();
                 showSpinAnimation();
 //                randomNumber();
 //                showToast();
+            }
+        });
+        btn_Start.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                btn_Start.setBackgroundColor(Color.GRAY);
+                return false;
             }
         });
     }
@@ -95,7 +103,15 @@ public class MainActivity extends Activity {
         btn_Setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                btn_Setting.setBackgroundColor(Color.parseColor("#2d7b31"));
                showSetting();
+            }
+        });
+        btn_Setting.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                btn_Setting.setBackgroundColor(Color.GRAY);
+                return false;
             }
         });
     }
@@ -105,18 +121,18 @@ public class MainActivity extends Activity {
         btn_Num0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                btn_Num0.setBackgroundColor(Color.GREEN);
+                btn_Num0.setBackgroundColor(Color.parseColor("#2d7b31"));
                 selected=String.valueOf(0);
                 showSelectAmount();
             }
         });
-//        btn_Num0.setOnTouchListener(new View.OnTouchListener() {
-//            @Override
-//            public boolean onTouch(View view, MotionEvent motionEvent) {
-//                btn_Num0.setBackgroundColor(Color.GRAY);
-//                return false;
-//            }
-//        });
+        btn_Num0.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                btn_Num0.setBackgroundColor(Color.GRAY);
+                return false;
+            }
+        });
     }
 
     private void btn_Num1(){
@@ -593,7 +609,7 @@ public class MainActivity extends Activity {
         btn_1to18.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                btn_1to18.setBackgroundColor(Color.GREEN);
+                btn_1to18.setBackgroundColor(Color.parseColor("#2d7b31"));
                 btn_Num1.setBackgroundColor(Color.RED);
                 btn_Num2.setBackgroundColor(Color.BLACK);
                 btn_Num3.setBackgroundColor(Color.RED);
@@ -636,6 +652,7 @@ public class MainActivity extends Activity {
                 btn_Num16.setBackgroundColor(Color.GRAY);
                 btn_Num17.setBackgroundColor(Color.GRAY);
                 btn_Num18.setBackgroundColor(Color.GRAY);
+                btn_1to18.setBackgroundColor(Color.GRAY);
                 return false;
             }
         });
@@ -646,7 +663,7 @@ public class MainActivity extends Activity {
         btn_19to36.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                btn_19to36.setBackgroundColor(Color.GREEN);
+                btn_19to36.setBackgroundColor(Color.parseColor("#2d7b31"));
                 btn_Num19.setBackgroundColor(Color.RED);
                 btn_Num20.setBackgroundColor(Color.BLACK);
                 btn_Num21.setBackgroundColor(Color.RED);
@@ -689,6 +706,7 @@ public class MainActivity extends Activity {
                 btn_Num34.setBackgroundColor(Color.GRAY);
                 btn_Num35.setBackgroundColor(Color.GRAY);
                 btn_Num36.setBackgroundColor(Color.GRAY);
+                btn_19to36.setBackgroundColor(Color.GRAY);
                 return false;
             }
         });
@@ -699,7 +717,7 @@ public class MainActivity extends Activity {
         btn_Even.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                btn_Even.setBackgroundColor(Color.GREEN);
+                btn_Even.setBackgroundColor(Color.parseColor("#2d7b31"));
                 btn_Num2.setBackgroundColor(Color.BLACK);
                 btn_Num4.setBackgroundColor(Color.BLACK);
                 btn_Num6.setBackgroundColor(Color.BLACK);
@@ -743,6 +761,7 @@ public class MainActivity extends Activity {
                 btn_Num32.setBackgroundColor(Color.GRAY);
                 btn_Num34.setBackgroundColor(Color.GRAY);
                 btn_Num36.setBackgroundColor(Color.GRAY);
+                btn_Even.setBackgroundColor(Color.GRAY);
                 return false;
             }
         });
@@ -753,7 +772,7 @@ public class MainActivity extends Activity {
         btn_Odd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                btn_Odd.setBackgroundColor(Color.GREEN);
+                btn_Odd.setBackgroundColor(Color.parseColor("#2d7b31"));
                 btn_Num11.setBackgroundColor(Color.BLACK);
                 btn_Num13.setBackgroundColor(Color.BLACK);
                 btn_Num15.setBackgroundColor(Color.BLACK);
@@ -796,6 +815,7 @@ public class MainActivity extends Activity {
                 btn_Num31.setBackgroundColor(Color.GRAY);
                 btn_Num33.setBackgroundColor(Color.GRAY);
                 btn_Num35.setBackgroundColor(Color.GRAY);
+                btn_Odd.setBackgroundColor(Color.GRAY);
                 return false;
             }
         });
@@ -807,7 +827,7 @@ public class MainActivity extends Activity {
         btn_1st12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                btn_1st12.setBackgroundColor(Color.GREEN);
+                btn_1st12.setBackgroundColor(Color.parseColor("#2d7b31"));
                 btn_Num1.setBackgroundColor(Color.RED);
                 btn_Num2.setBackgroundColor(Color.BLACK);
                 btn_Num3.setBackgroundColor(Color.RED);
@@ -838,6 +858,7 @@ public class MainActivity extends Activity {
                 btn_Num10.setBackgroundColor(Color.GRAY);
                 btn_Num11.setBackgroundColor(Color.GRAY);
                 btn_Num12.setBackgroundColor(Color.GRAY);
+                btn_1st12.setBackgroundColor(Color.GRAY);
                 return false;
             }
         });
@@ -848,7 +869,7 @@ public class MainActivity extends Activity {
         btn_2nd12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                btn_2nd12.setBackgroundColor(Color.GREEN);
+                btn_2nd12.setBackgroundColor(Color.parseColor("#2d7b31"));
                 btn_Num14.setBackgroundColor(Color.RED);
                 btn_Num13.setBackgroundColor(Color.BLACK);
                 btn_Num16.setBackgroundColor(Color.RED);
@@ -879,6 +900,7 @@ public class MainActivity extends Activity {
                 btn_Num22.setBackgroundColor(Color.GRAY);
                 btn_Num23.setBackgroundColor(Color.GRAY);
                 btn_Num24.setBackgroundColor(Color.GRAY);
+                btn_2nd12.setBackgroundColor(Color.GRAY);
                 return false;
             }
         });
@@ -889,7 +911,7 @@ public class MainActivity extends Activity {
         btn_3rd12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                btn_3rd12.setBackgroundColor(Color.GREEN);
+                btn_3rd12.setBackgroundColor(Color.parseColor("#2d7b31"));
                 btn_Num25.setBackgroundColor(Color.RED);
                 btn_Num26.setBackgroundColor(Color.BLACK);
                 btn_Num27.setBackgroundColor(Color.RED);
@@ -920,6 +942,7 @@ public class MainActivity extends Activity {
                 btn_Num34.setBackgroundColor(Color.GRAY);
                 btn_Num35.setBackgroundColor(Color.GRAY);
                 btn_Num36.setBackgroundColor(Color.GRAY);
+                btn_3rd12.setBackgroundColor(Color.GRAY);
                 return false;
             }
         });
@@ -930,7 +953,7 @@ public class MainActivity extends Activity {
         btn_2to1st.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                btn_2to1st.setBackgroundColor(Color.GREEN);
+                btn_2to1st.setBackgroundColor(Color.parseColor("#2d7b31"));
                 btn_Num3.setBackgroundColor(Color.RED);
                 btn_Num6.setBackgroundColor(Color.BLACK);
                 btn_Num9.setBackgroundColor(Color.RED);
@@ -961,6 +984,7 @@ public class MainActivity extends Activity {
                 btn_Num30.setBackgroundColor(Color.GRAY);
                 btn_Num33.setBackgroundColor(Color.GRAY);
                 btn_Num36.setBackgroundColor(Color.GRAY);
+                btn_2to1st.setBackgroundColor(Color.GRAY);
                 return false;
             }
         });
@@ -971,7 +995,7 @@ public class MainActivity extends Activity {
         btn_2to1nd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                btn_2to1nd.setBackgroundColor(Color.GREEN);
+                btn_2to1nd.setBackgroundColor(Color.parseColor("#2d7b31"));
                 btn_Num2.setBackgroundColor(Color.BLACK);
                 btn_Num5.setBackgroundColor(Color.RED);
                 btn_Num8.setBackgroundColor(Color.BLACK);
@@ -1002,6 +1026,7 @@ public class MainActivity extends Activity {
                 btn_Num29.setBackgroundColor(Color.GRAY);
                 btn_Num32.setBackgroundColor(Color.GRAY);
                 btn_Num35.setBackgroundColor(Color.GRAY);
+                btn_2to1nd.setBackgroundColor(Color.GRAY);
                 return false;
             }
         });
@@ -1012,7 +1037,7 @@ public class MainActivity extends Activity {
         btn_2to1rd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                btn_2to1rd.setBackgroundColor(Color.GREEN);
+                btn_2to1rd.setBackgroundColor(Color.parseColor("#2d7b31"));
                 btn_Num1.setBackgroundColor(Color.RED);
                 btn_Num4.setBackgroundColor(Color.BLACK);
                 btn_Num7.setBackgroundColor(Color.RED);
@@ -1043,6 +1068,7 @@ public class MainActivity extends Activity {
                 btn_Num28.setBackgroundColor(Color.GRAY);
                 btn_Num31.setBackgroundColor(Color.GRAY);
                 btn_Num34.setBackgroundColor(Color.GRAY);
+                btn_2to1rd.setBackgroundColor(Color.GRAY);
                 return false;
             }
         });

@@ -62,4 +62,7 @@
     <string name="_title">Select amount you want to play</string>
     <string name="_sound">Sound: </string>
     <string name="_background">Background: </string>
+    <string name="_btnClose">Close</string>
+    <string name="greenBackground">Green</string>
+    <string name="redBackground">Red</string>
 </resources>
