@@ -49,16 +49,16 @@ public class SettingDialogFragment extends DialogFragment {
         });
 
     }
-//    private void setupRedRadioButton(){
-//        final RelativeLayout changeBackground=(RelativeLayout)getView().findViewById(R.id.mainView);
-//        final RadioButton redBackground=(RadioButton)getView().findViewById(R.id.red_Background);
-//        redBackground.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                changeBackground.setBackgroundColor(Color.RED);
-//            }
-//        });
-//    }
+    private void setupRedRadioButton(){
+        final RelativeLayout changeBackground=(RelativeLayout)getView().findViewById(R.id.mainView);
+        final RadioButton redBackground=(RadioButton)getView().findViewById(R.id.red_Background);
+        redBackground.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                changeBackground.setBackgroundColor(Color.RED);
+            }
+        });
+    }
 //    private void setupGreenRadioButton(){
 //        RadioButton greenBackground=(RadioButton)getView().findViewById(R.id.green_Background);
 //        greenBackground.setOnClickListener(new View.OnClickListener() {
