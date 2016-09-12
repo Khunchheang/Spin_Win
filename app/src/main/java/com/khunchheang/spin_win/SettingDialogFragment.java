@@ -17,6 +17,7 @@ import android.widget.RelativeLayout;
  */
 public class SettingDialogFragment extends DialogFragment {
     SettingListener settingListener;
+    int colorValue;
 
     public void setSettingListener(SettingListener settingListener) {
         this.settingListener = settingListener;
@@ -36,7 +37,7 @@ public class SettingDialogFragment extends DialogFragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         setupButtonClose();
-//        setupRedRadioButton();
+        setupButtonSettingOK();
     }
 
     private void setupButtonClose(){
@@ -49,23 +50,28 @@ public class SettingDialogFragment extends DialogFragment {
         });
 
     }
-    private void setupRedRadioButton(){
-        final RelativeLayout changeBackground=(RelativeLayout)getView().findViewById(R.id.mainView);
-        final RadioButton redBackground=(RadioButton)getView().findViewById(R.id.red_Background);
-        redBackground.setOnClickListener(new View.OnClickListener() {
+
+    private int setupRadioButton(){
+        RadioButton greenBackground=(RadioButton)getView().findViewById(R.id.radioBtn_Green);
+        RadioButton redBackground=(RadioButton)getView().findViewById(R.id.radioBtn_Red);
+        if(greenBackground.isChecked()){
+            colorValue=Color.parseColor("#234e35");
+        }else if(redBackground.isChecked()){
+            colorValue=Color.parseColor("#541030");
+        }
+        return colorValue;
+    }
+
+    private void setupButtonSettingOK(){
+        final View ButtonSettingOK=getView().findViewById(R.id.btn_settingOK);
+        ButtonSettingOK.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                changeBackground.setBackgroundColor(Color.RED);
+            public void onClick(View v) {
+                int colorInt=setupRadioButton();
+                settingListener.onSetting(colorInt);
+                dismiss();
             }
         });
     }
-//    private void setupGreenRadioButton(){
-//        RadioButton greenBackground=(RadioButton)getView().findViewById(R.id.green_Background);
-//        greenBackground.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                changeBackground.setBackgroundColor(Color.GREEN);
-//            }
-//        });
-//    }
+
 }

@@ -97,7 +97,7 @@
                android:layout_height="wrap_content">
 
                <RadioButton
-                   android:id="@+id/green_Background"
+                   android:id="@+id/radioBtn_Green"
                    android:layout_width="90dp"
                    android:layout_height="wrap_content"
                    android:textColor="@android:color/background_light"
@@ -113,7 +113,7 @@
                    android:text=""/>
 
                <RadioButton
-                   android:id="@+id/red_Background"
+                   android:id="@+id/radioBtn_Red"
                    android:layout_width="90dp"
                    android:layout_height="wrap_content"
                    android:textColor="@android:color/background_light"
@@ -153,6 +153,24 @@
                 android:textColor="@android:color/background_light"
                 android:text="@string/_btnClose"
                 android:id="@+id/btn_close"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text=""/>
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#0d8c33"
+                android:textSize="20sp"
+                android:textColor="@android:color/background_light"
+                android:text="@string/_btnOk"
+                android:id="@+id/btn_settingOK"
                 android:layout_marginRight="10dp"
                 android:layout_gravity="right" />
 

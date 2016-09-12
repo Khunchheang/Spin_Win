@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.PopupWindow;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -1448,8 +1449,9 @@ public class MainActivity extends Activity {
 
         fragment.setSettingListener(new SettingListener() {
             @Override
-            public void onSetting() {
-
+            public void onSetting(int color) {
+                RelativeLayout mainActivity=(RelativeLayout)findViewById(R.id.mainView);
+                mainActivity.setBackgroundColor(color);
             }
         });
 
